@@ -26,7 +26,7 @@ const getPost = (
 			console.log(e);
 			// return { success: false, errorSource: e.response.data.errorSource };
 		});
-};
+}; 
 const getTags = (
 	data
 ) => {
@@ -52,9 +52,9 @@ const getTags = (
 		});
 };
 
-
-
-export default {
+const exportedObject = {
 	getPost,
 	getTags,
-};
+}
+
+export default exportedObject;
