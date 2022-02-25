@@ -1,0 +1,264 @@
+.app_wrapper{
+    
+    width:1300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px auto;
+}
+
+.app_wrapper .dev_tags{
+    flex: 0.2;
+    margin-right: 10px;
+
+    /* background-color: #fafafa; */
+    /* height: 700px; */
+}
+.app_wrapper .dev_main_articles{
+    flex: 0.6;
+    margin-right: 10px;
+}
+.app_wrapper .dev_gist{
+    flex: 0.2;
+    margin-right: 10px;
+    background-color: #fafafa;
+    height: 700px;
+}
+
+/* /Relevant starts here  */
+.article_tab{
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 30px 20px ;
+    border: 1px solid #e4e4e4;
+    /* width: 100%; */
+}
+.article_tab .userInfo{
+    display: flex;
+}
+
+.article_tab .userImage{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d1d1d1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.article_tab .userImage img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.article_tab .username .name{
+    font-weight: 500;
+}
+
+.article_tab .username .date{
+    font-size: 14px;
+    color: #5c5c5c;
+}
+
+.post_title{
+    padding: 10px 0px 10px 40px;
+}
+
+.article_tab .post_title a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.post_title a:hover{
+    color: #3b49e0;
+}
+
+.article_tab .post_tags{
+    padding: 10px 0px 10px 40px;
+    display: flex;
+}
+
+.post_tags span{
+    margin-right: 15px;
+    cursor: pointer;
+    color: #5c5c5c;
+    font-size: 14px;
+}
+
+.article_tab .post_details{
+    padding: 10px 0px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post_details .reactions{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #525252;
+}
+
+.post_details .save_tab{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #525252;
+}
+
+.save_tab p, .reactions p{
+    margin-right: 15px;
+    cursor: pointer;
+    padding: 9px 10px;
+}
+
+.save_tab p:hover, .reactions p:hover{
+    background-color: #ebebeb;
+    border-radius: 7px;
+}
+
+.save_tab .save_btn{
+    padding: 9px 15px ;
+    border-radius: 7px;
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+.save_tab .time:hover{
+    background-color: transparent;
+}
+
+.love, .comments{
+    display: flex;
+}
+
+.love span, .comments span{
+    font-size: 16px;
+    margin-right: 5px
+}
+
+.save_btn:hover{
+    background-color: #b9b9b9 !important;
+}
+/* Relevant ends here */
+
+/* Left Tags */
+.community{
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 30px;
+}
+
+.community .login{
+  /* background-color: #ebedff; */
+  padding: 10px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.community .login:hover{
+  background-color: #ebedff;
+  text-decoration: underline;
+}
+
+.community .create_account{
+  padding: 10px 15px;
+  color: #3b49e0;
+  border: 1px solid #3b49e0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.create_account:hover{
+  background-color: #3b49e0;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.community h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.community h4 span{
+    color: #3b49e0;
+}
+
+.community .com_gist{
+    color: #a1a1a1;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.navigation{
+    margin-bottom: 30px;
+}
+
+.navigation .nav_list_item{
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #505050;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.navigation .nav_list_item:hover{
+    background-color: #ebedff;
+    text-decoration: underline;
+    color: #3b49e0;
+}
+
+.navigation .nav_list_item span{
+    margin-right: 10px
+}
+
+.pop_tags{
+    height: 350px;
+    overflow-y: scroll;
+    padding: 10px 15px;
+}
+
+
+
+
+/* left Tags ends here */
+
+@media screen and (max-width:800px){
+
+    .app_wrapper{
+        width: 100%;
+    }
+    .dev_gist, .dev_tags{
+        display:none;
+    }
+
+    .app_wrapper .dev_main_articles{
+        margin-right: 10px;
+        width: 100%;
+        overflow-x: hidden;
+        flex: 1;
+    }
+
+    .article_tab{
+        border-radius: 5px;
+        margin-bottom: 5px;
+        padding: 30px 10px;
+        border: 1px solid #e4e4e4;
+        /* width: 100%; */
+    }
+
+    love span, .comments span{
+        font-size: 13px;
+        margin-right: 3px
+    }
+}

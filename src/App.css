@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+/* main{
+} */
+
+header{
+  width: 100vw;
+  background-color: #fff;
+  box-shadow: 0 1px 1px #00000020;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  background-color: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 1300px;
+  padding: 10px 0px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+nav .logo, .nav_auth{
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo .main_logo{
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav .search_bar{
+  border: 1px solid #d1d1d1;
+  border-radius: 9px;
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search_bar input{
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #000000;
+  outline: none;
+  width: 90%;
+  margin-left: 5px;
+}
+
+.search_bar span{
+  font-size: 25px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.search_bar span:hover{
+  background-color: #ebedff;
+}
+
+.nav_auth{
+  width: 18vw;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+}
+
+.nav_auth .login{
+  /* background-color: #ebedff; */
+  padding: 10px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.nav_auth .login:hover{
+  background-color: #ebedff;
+  text-decoration: underline;
+}
+
+.nav_auth .create_account{
+  padding: 10px 15px;
+  color: #3b49e0;
+  border: 1px solid #3b49e0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create_account:hover{
+  background-color: #3b49e0;
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width:800px) {
+  header{
+    width: 100%;
+    padding: 5px 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav .search_bar{
+    border-radius: 9px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
+
