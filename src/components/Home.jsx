@@ -36,6 +36,12 @@ const Home = () => {
                 <LeftPanel/>
             </div>
             <div className="dev_main_articles">
+                <div className="art_topbar">
+                <p>Relevant</p>
+                <p>Latest</p>
+                <p>Top</p>
+                </div>
+              
                 {postData.map(post => {
                     
                     return (

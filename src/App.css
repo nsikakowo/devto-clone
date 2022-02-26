@@ -103,6 +103,11 @@ nav .search_bar{
 .mob_search{
   display: none;
 }
+.menu{
+  display: none;
+}
+
+
 
 
 @media screen and (max-width:800px) {
@@ -139,10 +144,23 @@ nav .search_bar{
     display: none;
   }
 
+  .menu{
+    display: block;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .menu:hover{
+    background-color: #dcdffd;
+  }
+
   .mob_search{
     display: block;
     margin-right: 10px;
     font-size: 25px;
+    cursor: pointer;
   }
 }
 

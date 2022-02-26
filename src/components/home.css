@@ -35,6 +35,24 @@
     border: 1px solid #e4e4e4;
     /* width: 100%; */
 }
+
+.art_topbar{
+    display: flex;
+  }
+
+  .art_topbar p{
+      margin: 10px 15px 15px;
+      cursor: pointer;
+  }
+
+  .art_topbar p:hover{
+      color: #3b49e0;
+  }
+
+  .art_topbar p:first-child{
+      font-weight: 600;
+  }
+
 .article_tab .userInfo{
     display: flex;
 }
@@ -64,7 +82,8 @@
 }
 
 .post_title{
-    padding: 10px 0px 10px 40px;
+    padding: 10px 0px 0px 40px;
+    font-size: 20px;
 }
 
 .article_tab .post_title a{
@@ -78,7 +97,7 @@
 }
 
 .article_tab .post_tags{
-    padding: 10px 0px 10px 40px;
+    padding: 10px 0px 0px 40px;
     display: flex;
 }
 
@@ -110,7 +129,7 @@
 }
 
 .save_tab p, .reactions p{
-    margin-right: 15px;
+    margin-right: 5px;
     cursor: pointer;
     padding: 9px 10px;
 }
