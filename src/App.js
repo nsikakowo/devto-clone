@@ -11,10 +11,11 @@ function App() {
           <div className="main_logo">DEV</div>
           <div className="search_bar">
             <input type="search" placeholder='Search...' name="" id="" />
-            <span><FiSearch/></span>
+            
           </div>
         </div>
         <div className="nav_auth">
+        <span className='mob_search'><FiSearch/></span>
           <p className="login">Log in</p>
           <p className="create_account">Create account</p>
         </div>

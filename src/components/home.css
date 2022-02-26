@@ -17,6 +17,7 @@
 .app_wrapper .dev_main_articles{
     flex: 0.6;
     margin-right: 10px;
+   
 }
 .app_wrapper .dev_gist{
     flex: 0.2;
@@ -243,10 +244,11 @@
     }
 
     .app_wrapper .dev_main_articles{
-        margin-right: 10px;
+        margin-right: 0px;
         width: 100%;
         overflow-x: hidden;
         flex: 1;
+        
     }
 
     .article_tab{
@@ -261,4 +263,5 @@
         font-size: 13px;
         margin-right: 3px
     }
+    
 }
